@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif !important;
+    background-color: black !important;
+}
+html,body{
+    scroll-behavior: smooth !important;
+}
+.navbar-brand{
+    color: #fff !important;
+    font-family: 'Raleway', sans-serif !important; 
+}
+.banner-text h6{
+    font-weight: 600;
+    background: url(assets/img/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0 ;
+    animation: back 20s linear infinite;
+    color: #fff;
+    color: transparent;
+    font-size: 40px;
+    -webkit-text-stroke:1px #fff;
+    letter-spacing: 4px;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+@media(max-width:991px){
+    .banner-text h6,span{
+        text-align: left;
+    }
+}
+.banner-text{
+    padding-top: 100px;
+}
+.banner-text span{
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+}
+.banner-text ul{
+    text-align: center;
+}
+.navbar-toggler .line{
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+    background-color: #fff !important;
+    border-radius: 20px;
+    transition: all ease-in-out 0.5s;
+}
+.openmenu .line-1{
+    transform: rotate(45deg);
+    margin: -3px 0;
+}
+.openmenu .line-3{
+    transform: rotate(-45deg);
+    margin: -15px 0;
+}
+.openmenu .line-2{
+    width: 0 !important;
+}
+.openmenu .line-1{
+    transform: translate(-50%, -50%) rotate(-45%);
+
+}
+.openmenu .line-3{
+    transform: translate(-50%, -50%) rotate(45%);
+}
+.project{
+    padding-top: 400px;
+}
+.banner img{
+    background-color: rgb(26, 26, 26);
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.project a{
+    background-color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    color: #000 !important; 
+    margin-top: 20px;
+    border-radius: 2px;
+    font-size: 20px;
+}

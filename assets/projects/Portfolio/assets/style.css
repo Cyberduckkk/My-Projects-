@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif !important;
+    background: #171717 !important;
+}
+html,body{
+    scroll-behavior: smooth !important;
+}
+:root{
+    --white:#fff;
+    --dark:#000;
+    --bg-color: #171717;
+    --page--color:#A2FF00;
+    --transition: all ease-in-out .3s;
+    --font-family:'Orbitron', sans-serif !important;
+}
+nav{
+    width: 95%;
+    margin: auto;
+}
+.navbar-brand{
+    font-family: 'Orbitron', sans-serif !important;
+    color: var(--page--color) !important;
+}
+nav ul li a{
+    position: relative;
+    color: var(--white) !important;
+    transition: var(--transition) !important;
+    font-size: 1.2rem;
+}
+nav ul li a::before{
+    position: absolute;
+    width: 0;
+    height: 2px;
+    border-radius: 50%;
+    content: '';
+    left: 0;
+    transform: translate(50%,50%) !important;
+    bottom: -5px;
+    background-color: var(--page--color);
+    transition: var(--transition);
+    right: 0;
+    margin-left:auto;
+    margin-right:auto;
+}
+nav ul li a:hover{
+    transform: translateY(-10px);
+}
+nav ul li a:hover::before{
+    padding: 3px;
+}
+nav ul{
+    gap: 40px;
+}
+.btn{
+    border-radius: 30px !important;
+    width: 10rem;
+    background-color: var(--page--color) !important;
+}
+.n-btn{
+    margin-left: -15px;
+}
+.hamburger{
+    background-color: transparent !important;
+    color: transparent !important;
+    display: none;
+}
+.hamburger .line{
+    background-color: var(--white);
+    height:4px;
+    margin: 6px 0;
+    border-radius: 50px;
+    width: 30px;
+    transition: all ease-in-out .3s;
+}
+.hamburger .line1{
+    width: 35px;
+}
+.hamburger .line3{
+    width: 25px;
+    margin-left: 10px;
+}
+.hamburger .line2{
+    width: 35px;
+    margin-top: 10px;
+    float: right;
+}
+.banner-text{
+    padding-top: 100px;
+}
+.banner{
+    margin-top: 30px;
+    font-family: 'Tajawal', sans-serif !important;
+}
+.banner h1,p{
+    font-weight: 700;
+    color: var(--white);
+}
+.banner p{
+    color: var(--page--color);
+}
+.banner img{
+    width: 45rem;
+    margin-top: 130px;
+    border-radius:40% 53% 37% 63% / 41% 34% 66% 59% ;
+}
+.about-img img{
+    border-radius: 10px;
+}
+.about{
+    padding-top: 50px;
+}
+.about-text{
+    padding-top: 200px;
+}
+.about-text h3{
+    color: var(--page--color);
+    font-family: var(--font-family);
+}
+.about-text p{
+    text-align: left;
+    color: var(--white) !important;
+    font-weight: 400;
+}
+.about-text .btn{
+    margin-top: 10px 0;
+    float: left;
+}
+.btn{
+    font-weight: 500 !important;
+}
+.my-service{
+    padding-top: 50px;
+}
+.my-service h2{
+    color: var(--page--color);
+    font-family: var(--font-family);
+}
+.services{
+    height: 230px;
+    padding: 10px;
+    margin: 20px 0;
+}
+.services h2{
+    font-size: 20px;
+    color: var(--white);
+    padding-top: 20px;
+}
+.services p{
+    font-weight: 300;
+}
+.green-text{
+    color: var(--page--color);
+    font-family: var(--font-family);
+}
+.portfolio{
+    padding-top: 50px;
+}
+.skill-text h3,h5{
+    font-family: var(--font-family);
+    color: var(--white);
+}
+.skills-content div{
+    margin-top: 50px;
+}
+.projects-content a img{
+    transition: var(--transition);
+}
+.projects-content a img:hover{
+    transform: translateY(-7px) scale(0.9);
+ }
+ .send-btn{
+    width: 150px;
+    text-align: center;
+    transition: var(--transition) !important;
+ }
+ .send-btn i{
+    margin-top: 4px;
+    font-size: 25px;
+    transition: var(--transition) !important;
+ }
+ .send-btn:hover::before{
+    text-align: center;
+    content: "Send Now";
+    margin-left: 20px;
+    position: absolute;
+    margin-top: 4px;
+ }
+ .send-btn:hover i{
+    margin-top: 4px;
+    margin-left: 200px;
+    color: var(--page--color);
+ }
+ .MESSAGE{
+    background-color: transparent !important;
+    border-bottom: 1px solid var(--white);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: var(--page--color);
+    outline: none;
+    resize: none;
+}
+ .input{
+    background-color: transparent;
+    border-bottom: 1px solid var(--white);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    color: var(--page--color);
+    padding-left: 20px;
+    padding-bottom: 20px;
+ }
+ .contact-section h3{
+    color: #9b9b9b;
+ }
+ .contact-content{
+    margin-top: 50px !important;
+ }
+ .contact-box{
+    margin-top: 100px !important;
+ }
+ .contact-content h6{
+    color: var(--white);
+ }
+ .bottom-svg{
+    padding: 20px;
+    margin-top: 50px;
+    background-color: var(--page--color);
+ }
+ .bottom-svg h6{
+    text-align: center;
+    color: var(--bg-color);
+ }
+ .bottom-svg h6 a{
+    color: var(--white);
+    text-decoration: none;
+ }
+@media(max-width:720px){
+    .banner img{
+        width: 20rem;
+    }
+}
+@media(max-width:575px){
+    .banner img{
+        width: 5rem;
+    }
+}
+@media(max-width:767px){
+    .input{
+        margin: 20px 0;
+        padding-left: 5px;
+     }
+    .projects-content a img{
+       margin-top: 30px;
+    }
+    .skills-content div{
+        margin-top: 100px;
+    }
+    .banner img{
+        width: 20rem;
+        margin-top: 30px;
+    }
+    .banner-img{
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+@media(max-width:992px){
+    nav ul{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .about-text{
+        padding-top: 50px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .banner-text{
+        padding-top: 10px;
+        font-family: 'Tajawal', sans-serif !important;
+    }
+    .about{
+        text-align: center;
+    }
+    .about-img img{
+        width: 20rem;
+        margin-top: 50px;
+    }
+}
+.navbar-collapse{
+    transition: all .5s !important;
+}
